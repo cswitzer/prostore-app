@@ -1,0 +1,8 @@
+!*.js
+*.ts
+*.tsx
+*.json
+*.css
+*.scss
+*.html
+*.md
