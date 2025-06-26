@@ -1,6 +1,4 @@
 !*.js
-*.ts
-*.tsx
 *.json
 *.css
 *.scss
