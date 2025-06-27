@@ -1,5 +1,16 @@
+import ProductList from "@/product/product-list";
+import sampleData from "@/db/sample-data";
+
 const Homepage = () => {
-  return <p>Hello prostore</p>;
+  return (
+    <>
+      <ProductList
+        data={sampleData.products}
+        title="Featured Products"
+        limit={4}
+      />
+    </>
+  );
 };
 
 export default Homepage;
