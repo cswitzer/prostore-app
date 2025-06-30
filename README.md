@@ -26,3 +26,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 npm i -D prisma @prisma/client
 npx prisma init
+
+### Generate Prisma Client with specified schema
+npx prisma generate
+
+### Migrate the database
+npx prisma migrate dev --name <migration_name>
+
+### Monitor the database
+npx prisma studio
