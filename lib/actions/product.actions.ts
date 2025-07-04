@@ -1,5 +1,5 @@
 "use server";
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "@/db/prisma";
 import { convertToPlainObject } from "../utils";
 import { LATEST_PRODUCTS_LIMIT } from "@/lib/constants";
 
@@ -10,7 +10,6 @@ export async function getLatestProducts() {
    * fetching data. They should be used to perform mutations or side effects.
    * Let us just treat this as a regular function that is not a server action for now.
    */
-  const prisma = new PrismaClient();
   const data = await prisma.product.findMany({
     take: LATEST_PRODUCTS_LIMIT,
     orderBy: {
