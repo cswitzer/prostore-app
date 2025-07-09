@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import ProductPrice from "@/components/shared/product-price";
+import ProductPrice from "@/components/product/product-price";
 import { Product } from "@/types";
 
 const ProductCard = ({ product }: { product: Product }) => {
